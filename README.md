@@ -2,7 +2,7 @@
 
 Every published skill on [ecomdly](https://ecomdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @ecomdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http ecomdly https://ecomdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on ecomdly (submit a skill, it goes through review). 30 skills · updated 2026-09-25.
+This repository is generated from the catalog; edits happen on ecomdly (submit a skill, it goes through review). 30 skills · updated 2026-09-29.
 
 ## Categories
 
@@ -21,80 +21,80 @@ This repository is generated from the catalog; edits happen on ecomdly (submit a
 
 | skill | description | version | |
 |---|---|---|---|
-| [shopmetric/ga4-ecommerce-event-auditor](analytics-tracking/ga4-ecommerce-event-auditor.md) | Audits GA4 ecommerce events against the recommended schema — required params, items[] fields, currency and transaction_id dedupe — and reports gaps without editing tags. | v2 | 🛡 |
-| [shopmetric/ga4-funnel-analyst](analytics-tracking/ga4-funnel-analyst.md) | Reads a GA4 export and finds where the checkout funnel leaks — drop-off by step, device and source — with the one fix to try first. | v3 | ★ 🛡 |
-| [shopmetric/revenue-discrepancy-reconciler](analytics-tracking/revenue-discrepancy-reconciler.md) | Explains why backend, GA4 and Google Ads revenue differ with a bridge of causes — tax, shipping, refunds, consent, attribution, time zones — from supplied numbers only. | v2 | 🛡 |
-| [shopmetric/weekly-store-kpi-report](analytics-tracking/weekly-store-kpi-report.md) | Builds a one-page weekly store report — revenue, orders, AOV, conversion rate, ad spend, MER and returns — against last week and last year, stating any missing source. | v2 | 🛡 |
+| [shopmetric/ga4-ecommerce-event-auditor](analytics-tracking/ga4-ecommerce-event-auditor.md) | Audits GA4 ecommerce events against Google's schema (currency with value, transaction_id, items, value = price x quantity) and matches purchases to backend orders, returning a prioritised fix list for developers. | v3 | 🛡 |
+| [shopmetric/ga4-funnel-analyst](analytics-tracking/ga4-funnel-analyst.md) | Builds a session-level GA4 checkout funnel, tests which step worsened against the store's own baseline, localises it by device and channel, and proposes one fix with a way to confirm it. | v4 | ★ 🛡 |
+| [shopmetric/revenue-discrepancy-reconciler](analytics-tracking/revenue-discrepancy-reconciler.md) | Reconciles backend, GA4 and Google Ads revenue with an order-level join and a line-by-line bridge (VAT and shipping, time zones, consent, gateway loss, test orders, click vs conversion date) for store owners and analysts. | v3 | 🛡 |
+| [shopmetric/weekly-store-kpi-report](analytics-tracking/weekly-store-kpi-report.md) | Writes a one-page Monday KPI report for store owners: backend revenue, orders, AOV, conversion, MER and refunds versus last week and last year, with noise tests and at most two decisions. | v3 | 🛡 |
 
 ## Catalog content
 
 | skill | description | version | |
 |---|---|---|---|
-| [tonecheck/catalog-translation-localizer](catalog-content/catalog-translation-localizer.md) | Translates thousands of SKUs in resumable batches with a glossary and do-not-translate list, localises units, sizes and currency, then runs a QA pass before import. | v3 | ★ 🛡 |
-| [rankcraft/category-page-copy-writer](catalog-content/category-page-copy-writer.md) | Writes category page intros and buying-guide blocks from real product data and search queries — short above the grid, useful below it, no keyword stuffing. | v2 | 🛡 |
-| [cartlift/product-attribute-extractor](catalog-content/product-attribute-extractor.md) | Pulls structured attributes (color, size, material, GTIN, dimensions) out of messy titles and descriptions into feed-ready columns, with a source and confidence per value. | v2 | 🛡 |
-| [tonecheck/product-description-writer](catalog-content/product-description-writer.md) | Writes product page descriptions from the spec sheet in the store's voice — benefit first, facts only from the data, missing specs flagged instead of guessed. | v2 | 🛡 |
+| [tonecheck/catalog-translation-localizer](catalog-content/catalog-translation-localizer.md) | Translates a catalog export in resumable batches with a mandatory glossary, protected brand and placeholder tokens, locale number formats and per-row QA flags, so content managers know exactly which rows need a human. | v4 | ★ 🛡 |
+| [rankcraft/category-page-copy-writer](catalog-content/category-page-copy-writer.md) | Writes the title, meta, short intro, buying guide and evidence-based FAQ for a store category page from the category's dated product export and Search Console queries, with every number traceable and unsupported claims flagged. | v3 |  |
+| [cartlift/product-attribute-extractor](catalog-content/product-attribute-extractor.md) | Extracts colour, size, material, gender and other attributes from titles, variants and descriptions into Merchant Center-ready values, with source, evidence and confidence per value and a review queue for conflicts. | v3 | 🛡 |
+| [tonecheck/product-description-writer](catalog-content/product-description-writer.md) | Writes product descriptions and spec lists from supplier data in the store's brand voice, ordering facts by what decides the purchase for each product type, listing missing specs and flagging unsupported or EU-restricted claims. | v3 |  |
 
 ## Conversion & UX
 
 | skill | description | version | |
 |---|---|---|---|
-| [checkoutlab/ab-test-readout](conversion-ux/ab-test-readout.md) | Reads out an A/B test honestly: SRM check, sample size against the plan, significance and intervals, guardrail metrics and novelty effect before any "winner" call. | v3 | 🛡 |
-| [checkoutlab/checkout-friction-audit](conversion-ux/checkout-friction-audit.md) | Walks the checkout step by step against known friction points — forced accounts, late shipping costs, surplus form fields — and ranks fixes by impact and effort. | v2 | 🛡 |
-| [checkoutlab/product-page-cro-review](conversion-ux/product-page-cro-review.md) | Reviews a product detail page element by element — images, price, variants, delivery, returns, reviews — and writes testable fixes, never invented product claims. | v2 | 🛡 |
+| [checkoutlab/ab-test-readout](conversion-ux/ab-test-readout.md) | Reads out an e-commerce A/B test in the right order: SRM chi-square, pre-registered primary metric, sample size and peeking, effect with confidence interval, guardrails and novelty, then ship, don't ship or inconclusive. | v4 | 🛡 |
+| [checkoutlab/checkout-friction-audit](conversion-ux/checkout-friction-audit.md) | Audits the checkout from cart to withdrawal flow using GA4 step data and a mobile guest walkthrough, ranks friction by severity and reach, and lists EU must-fixes such as the order button and pre-ticked extras. | v3 | 🛡 |
+| [checkoutlab/product-page-cro-review](conversion-ux/product-page-cro-review.md) | Reviews a product page template against the shopper's real purchase questions and EU price, review and safety-info rules, and returns ranked test hypotheses with metrics for store owners and CRO specialists. | v3 |  |
 
 ## Customer care
 
 | skill | description | version | |
 |---|---|---|---|
-| [helpdeskly/order-status-reply-drafter](customer-care/order-status-reply-drafter.md) | Drafts "where is my order" replies from real order and carrier tracking data, states delays plainly, and never promises a delivery date the data does not support. | v2 | 🛡 |
-| [helpdeskly/returns-reason-analyzer](customer-care/returns-reason-analyzer.md) | Codes return reasons from free text into root causes (size/fit, damaged, not as described) and links each cluster to a concrete product page or packing fix. | v2 | 🛡 |
+| [helpdeskly/order-status-reply-drafter](customer-care/order-status-reply-drafter.md) | Drafts where-is-my-order replies from order and carrier data, with per-parcel status, only carrier-backed dates, and accurate EU delivery, withdrawal and warranty statements for a human agent to send. | v3 |  |
+| [helpdeskly/returns-reason-analyzer](customer-care/returns-reason-analyzer.md) | Codes every return to a root cause with evidence, separates withdrawals from warranty and transit damage, flags SKUs with statistically real return problems, and routes each fix to its owner. | v3 | 🛡 |
 
 ## E-shop SEO
 
 | skill | description | version | |
 |---|---|---|---|
-| [rankcraft/faceted-navigation-seo-audit](e-shop-seo/faceted-navigation-seo-audit.md) | Audits filter URLs on category pages: which facets deserve an indexable page, which get noindex or a canonical, and which parameter combinations are crawl traps. | v2 | 🛡 |
-| [rankcraft/product-schema-validator](e-shop-seo/product-schema-validator.md) | Validates Product, Offer, AggregateRating, shipping and return-policy JSON-LD against Google rich result requirements and the visible page, and reports every mismatch. | v2 | ★ 🛡 |
-| [rankcraft/search-console-auditor](e-shop-seo/search-console-auditor.md) | Audits Google Search Console data — pages losing clicks, queries with impressions but no CTR, and product pages cannibalizing each other. | v2 | 🛡 |
+| [rankcraft/faceted-navigation-seo-audit](e-shop-seo/faceted-navigation-seo-audit.md) | Decides facet by facet which filter URLs on an online store should be indexed, consolidated, noindexed or blocked from crawling, using crawl, log and Search Console data, and lists crawl traps with a safe rollout order. | v3 | 🛡 |
+| [rankcraft/product-schema-validator](e-shop-seo/product-schema-validator.md) | Audits a product page's JSON-LD against Google's merchant listing and product snippet rules and against the visible price, stock, ratings and written shipping/return policy, then lists errors, gaps and confirmed fixes. | v3 | ★ 🛡 |
+| [rankcraft/search-console-auditor](e-shop-seo/search-console-auditor.md) | Turns a Search Console performance export into three ranked lists for a store: pages losing clicks with the cause split into demand, ranking and CTR, under-clicked queries against the site's own CTR curve, and URLs competing for one query. | v3 | 🛡 |
 
 ## Email & retention
 
 | skill | description | version | |
 |---|---|---|---|
-| [inboxcart/abandoned-cart-sequence](email-retention/abandoned-cart-sequence.md) | Drafts a three-mail abandoned-cart sequence from the cart contents and the store's voice — useful, specific, and honest about discounts. | v2 | 🛡 |
-| [inboxcart/post-purchase-review-request](email-retention/post-purchase-review-request.md) | Drafts review-request mails timed after delivery, not purchase, asking every customer the same way — no incentives for positive reviews, no review gating. | v2 | ★ 🛡 |
-| [inboxcart/winback-segment-planner](email-retention/winback-segment-planner.md) | Segments lapsed customers by RFM and their own purchase cycle, then plans a win-back sequence per segment with honest offers taken from the store's real policy. | v2 | 🛡 |
+| [inboxcart/abandoned-cart-sequence](email-retention/abandoned-cart-sequence.md) | Designs a three-mail abandoned cart flow for an ESP with an EU consent check, exit and frequency rules, a margin-tested discount only in the last mail, and a holdout to measure real recovery. | v3 |  |
+| [inboxcart/post-purchase-review-request](email-retention/post-purchase-review-request.md) | Plans a post-delivery review request flow that asks every buyer the same way, with timing by product type, no gating, and incentive rules checked against Google, Trustpilot and EU review law. | v3 | ★ 🛡 |
+| [inboxcart/winback-segment-planner](email-retention/winback-segment-planner.md) | Segments lapsed customers by their own purchase cycle and net-of-returns RFM, plans a sequence and honest offer per segment with a holdout and break-even check, and sunsets unresponsive contacts. | v3 | 🛡 |
 
 ## Google Shopping
 
 | skill | description | version | |
 |---|---|---|---|
-| [marginmath/break-even-roas-calculator](google-shopping/break-even-roas-calculator.md) | Computes break-even and target ROAS from contribution margin after COGS, fees, fulfilment and returns, using only the store's numbers and showing every step. | v3 | ★ 🛡 |
-| [adsledger/pmax-asset-group-reviewer](google-shopping/pmax-asset-group-reviewer.md) | Reviews Performance Max asset groups and listing groups for overlap, thin assets and all-products catch-alls, and recommends restructures without editing the account. | v2 | 🛡 |
-| [adsledger/shopping-search-terms-miner](google-shopping/shopping-search-terms-miner.md) | Mines the Shopping search terms report for wasted spend and new winners, proposing negatives by match type for a human to apply, never pushing them itself. | v3 | 🛡 |
+| [marginmath/break-even-roas-calculator](google-shopping/break-even-roas-calculator.md) | Calculates break-even ROAS, PNO/COS and target ROAS per category and campaign mix from contribution margin (COGS, fees, fulfilment, returns), on the same VAT and shipping basis as your Google Ads conversion value, with all arithmetic shown. | v4 | ★ 🛡 |
+| [adsledger/pmax-asset-group-reviewer](google-shopping/pmax-asset-group-reviewer.md) | Reviews Performance Max asset groups for Merchant Center retailers: product ownership and overlaps, unserved products, asset gaps against Google's specs, message match, signals, brand exclusions and Final URL expansion, with proposals for a human to approve. | v3 | 🛡 |
+| [adsledger/shopping-search-terms-miner](google-shopping/shopping-search-terms-miner.md) | Mines Shopping and Performance Max search terms into collision-tested negatives (match type and level), watch terms and winners to protect, using n-grams and a sample-size rule instead of guesswork; for PPC managers. | v4 | 🛡 |
 
 ## Marketplaces
 
 | skill | description | version | |
 |---|---|---|---|
-| [listwise/comparison-feed-mapper](marketplaces/comparison-feed-mapper.md) | Maps a store catalog to Heureka, Zboží.cz and Idealo XML/CSV feeds with correct elements, categories and delivery days, and reports rows it cannot fill from real data. | v3 | 🛡 |
-| [listwise/marketplace-listing-adapter](marketplaces/marketplace-listing-adapter.md) | Adapts one master product record into Amazon, Allegro and Kaufland listings within each title/bullet limit and category attribute set, flagging every missing value. | v2 | 🛡 |
+| [listwise/comparison-feed-mapper](marketplaces/comparison-feed-mapper.md) | Maps a store catalog to Heureka.cz/.sk and Zboží.cz XML and idealo offer data element by element, including DELIVERY_DATE, carrier IDs and prior-price rules, and reports every row that would be rejected or badly paired. For Czech and EU e-shops. | v4 | 🛡 |
+| [listwise/marketplace-listing-adapter](marketplaces/marketplace-listing-adapter.md) | Turns a master product record into Amazon, Allegro and Kaufland listing drafts: leaf category, title within the channel limit, mapped attributes, GPSR fields and a blocking-gap list, for sellers expanding to marketplaces. | v3 | 🛡 |
 
 ## Pricing & merchandising
 
 | skill | description | version | |
 |---|---|---|---|
-| [marginmath/clearance-markdown-planner](pricing-merchandising/clearance-markdown-planner.md) | Plans staged markdowns from weeks of cover and sell-through, never below the margin floor you set, with EU 30-day lowest-price references on every reduction. | v2 | ★ 🛡 |
-| [marginmath/competitor-price-brief](pricing-merchandising/competitor-price-brief.md) | Compares your prices with competitor data you supply, matched by EAN, and recommends moves that respect your margin floor. Uses only provided or public data. | v2 | 🛡 |
+| [marginmath/clearance-markdown-planner](pricing-merchandising/clearance-markdown-planner.md) | Plans SKU-level clearance markdowns from stock, sell rate and exit date, stops at a VAT-correct floor, and shows the EU Omnibus 30-day prior price and correctly based discount percentage for every step, including progressive-markdown rules. | v3 | ★ 🛡 |
+| [marginmath/competitor-price-brief](pricing-merchandising/competitor-price-brief.md) | Compares your offers with competitor prices you supply, matched on GTIN and on total price with shipping, flags where you are out of the market or leaving margin, and suggests the smallest price move above your VAT-correct floor. | v3 | 🛡 |
 
 ## Product feeds
 
 | skill | description | version | |
 |---|---|---|---|
-| [adsledger/feed-custom-label-planner](product-feeds/feed-custom-label-planner.md) | Designs custom_label_0–4 so Shopping and PMax can bid by margin, performance and season, with rules drawn only from data the store actually has. | v2 | 🛡 |
-| [cartlift/gtin-identifier-auditor](product-feeds/gtin-identifier-auditor.md) | Validates GTIN check digits, brand and MPN coverage and identifier_exists use across a feed, and flags rows it cannot verify instead of filling them in. | v2 | 🛡 |
-| [cartlift/merchant-center-disapproval-fixer](product-feeds/merchant-center-disapproval-fixer.md) | Triages Merchant Center disapprovals by reason and impact, maps each to the attribute or page fix, and proposes feed changes only for a human to approve. | v3 | ★ 🛡 |
-| [cartlift/product-feed-optimizer](product-feeds/product-feed-optimizer.md) | Rewrites product titles and descriptions for Google Shopping feeds — attributes first, brand rules kept, no keyword stuffing. | v2 | 🛡 |
+| [adsledger/feed-custom-label-planner](product-feeds/feed-custom-label-planner.md) | Plans custom_label_0-4 from your own margins, VAT-correct break-even ROAS and sample-safe performance tiers, and outputs a mapping file for a supplemental feed plus the Shopping or PMax structure each label drives. For PPC specialists. | v3 | 🛡 |
+| [cartlift/gtin-identifier-auditor](product-feeds/gtin-identifier-auditor.md) | Audits every GTIN, MPN, brand and identifier_exists value in a product feed by GS1 rule (length, check digit, restricted prefixes, variant uniqueness) and lists the fix per row, without ever inventing a number. For feed and catalog managers. | v3 | 🛡 |
+| [cartlift/merchant-center-disapproval-fixer](product-feeds/merchant-center-disapproval-fixer.md) | Turns a Google Merchant Center issue export into a fix plan sorted by lost revenue: root cause per issue (feed, site, account setting or policy), owner, and whether a review is needed. For store owners and PPC specialists. | v4 | ★  |
+| [cartlift/product-feed-optimizer](product-feeds/product-feed-optimizer.md) | Rewrites Google Shopping feed titles and descriptions from verified attributes, policy-clean and marked as AI-generated via structured_title, and proposes missing attribute fills in a reviewable CSV. For store owners and feed managers. | v3 | 🛡 |
 
 ★ Ecomdly recommended · 🛡 Security checked (automated checks + clean AI safety scan + human review)
