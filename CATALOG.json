@@ -1,6 +1,6 @@
 {
-    "generated": "2026-09-29",
-    "count": 30,
+    "generated": "2026-10-05",
+    "count": 41,
     "skills": [
         {
             "id": "checkoutlab/ab-test-readout",
@@ -48,6 +48,21 @@
             "raw": "https://ecomdly.com/raw/checkoutlab/product-page-cro-review.md"
         },
         {
+            "id": "checkoutlab/site-search-audit",
+            "name": "site-search-audit",
+            "category": "Conversion & UX",
+            "category_slug": "conversion-ux",
+            "path": "conversion-ux/site-search-audit.md",
+            "description": "Audits on-site product search from GA4 view_search_results data or vendor logs plus a hands-on test set (zero results, no-click queries, diacritics, SKU/EAN, filters, mobile) and ranks fixes by lost revenue.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-10-05",
+            "url": "https://ecomdly.com/skills/checkoutlab/site-search-audit",
+            "raw": "https://ecomdly.com/raw/checkoutlab/site-search-audit.md"
+        },
+        {
             "id": "inboxcart/abandoned-cart-sequence",
             "name": "abandoned-cart-sequence",
             "category": "Email & retention",
@@ -76,6 +91,21 @@
             "updated": "2026-09-29",
             "url": "https://ecomdly.com/skills/inboxcart/post-purchase-review-request",
             "raw": "https://ecomdly.com/raw/inboxcart/post-purchase-review-request.md"
+        },
+        {
+            "id": "inboxcart/welcome-series-builder",
+            "name": "welcome-series-builder",
+            "category": "Email & retention",
+            "category_slug": "email-retention",
+            "path": "email-retention/welcome-series-builder.md",
+            "description": "Designs a welcome flow from signup to first purchase with provable EU consent, double opt-in, exit rules, a margin-tested discount decision, Gmail/Yahoo sender checks and a holdout. Drafts only, never sends.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-10-05",
+            "url": "https://ecomdly.com/skills/inboxcart/welcome-series-builder",
+            "raw": "https://ecomdly.com/raw/inboxcart/welcome-series-builder.md"
         },
         {
             "id": "inboxcart/winback-segment-planner",
@@ -121,6 +151,21 @@
             "updated": "2026-09-29",
             "url": "https://ecomdly.com/skills/adsledger/pmax-asset-group-reviewer",
             "raw": "https://ecomdly.com/raw/adsledger/pmax-asset-group-reviewer.md"
+        },
+        {
+            "id": "adsledger/shopping-budget-allocator",
+            "name": "shopping-budget-allocator",
+            "category": "Google Shopping",
+            "category_slug": "google-shopping",
+            "path": "google-shopping/shopping-budget-allocator.md",
+            "description": "Reallocates a fixed monthly budget across Shopping and Performance Max campaigns by margin-based break-even, lost IS to budget vs rank and marginal return on matured data, as stepwise moves for the owner to approve.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-10-05",
+            "url": "https://ecomdly.com/skills/adsledger/shopping-budget-allocator",
+            "raw": "https://ecomdly.com/raw/adsledger/shopping-budget-allocator.md"
         },
         {
             "id": "adsledger/shopping-search-terms-miner",
@@ -228,6 +273,36 @@
             "raw": "https://ecomdly.com/raw/marginmath/competitor-price-brief.md"
         },
         {
+            "id": "marginmath/free-shipping-threshold-planner",
+            "name": "free-shipping-threshold-planner",
+            "category": "Pricing & merchandising",
+            "category_slug": "pricing-merchandising",
+            "path": "pricing-merchandising/free-shipping-threshold-planner.md",
+            "description": "Sets or reviews a free-shipping threshold and shipping prices from your own basket distribution, carrier cost per parcel, contribution margin and bunching below the line, with profit per order and a test readout, no invented lift.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-10-05",
+            "url": "https://ecomdly.com/skills/marginmath/free-shipping-threshold-planner",
+            "raw": "https://ecomdly.com/raw/marginmath/free-shipping-threshold-planner.md"
+        },
+        {
+            "id": "marginmath/promotion-profit-check",
+            "name": "promotion-profit-check",
+            "category": "Pricing & merchandising",
+            "category_slug": "pricing-merchandising",
+            "path": "pricing-merchandising/promotion-profit-check.md",
+            "description": "Decides before launch whether a sale, coupon or bundle pays: break-even uplift from contribution margin, pull-forward, cannibalisation, coupon leakage, ad-target impact, EU 30-day prior price check and a baseline readout.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-10-05",
+            "url": "https://ecomdly.com/skills/marginmath/promotion-profit-check",
+            "raw": "https://ecomdly.com/raw/marginmath/promotion-profit-check.md"
+        },
+        {
             "id": "listwise/comparison-feed-mapper",
             "name": "comparison-feed-mapper",
             "category": "Marketplaces",
@@ -243,6 +318,21 @@
             "raw": "https://ecomdly.com/raw/listwise/comparison-feed-mapper.md"
         },
         {
+            "id": "listwise/marketplace-account-health-triage",
+            "name": "marketplace-account-health-triage",
+            "category": "Marketplaces",
+            "category_slug": "marketplaces",
+            "path": "marketplaces/marketplace-account-health-triage.md",
+            "description": "Turns Amazon Account Health, Allegro sales-quality and Kaufland performance exports into a risk-ranked fix plan: metric, window, slack in orders, roll-off date, root cause, fix and owner per issue.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-10-05",
+            "url": "https://ecomdly.com/skills/listwise/marketplace-account-health-triage",
+            "raw": "https://ecomdly.com/raw/listwise/marketplace-account-health-triage.md"
+        },
+        {
             "id": "listwise/marketplace-listing-adapter",
             "name": "marketplace-listing-adapter",
             "category": "Marketplaces",
@@ -256,6 +346,21 @@
             "updated": "2026-09-29",
             "url": "https://ecomdly.com/skills/listwise/marketplace-listing-adapter",
             "raw": "https://ecomdly.com/raw/listwise/marketplace-listing-adapter.md"
+        },
+        {
+            "id": "listwise/marketplace-profitability-check",
+            "name": "marketplace-profitability-check",
+            "category": "Marketplaces",
+            "category_slug": "marketplaces",
+            "path": "marketplaces/marketplace-profitability-check.md",
+            "description": "Calculates per-SKU, per-marketplace contribution on Amazon EU, Allegro and Kaufland after commission, fulfilment, storage, ads, returns and FX, on the right VAT basis, and decides keep, reprice, change fulfilment or delist.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-10-05",
+            "url": "https://ecomdly.com/skills/listwise/marketplace-profitability-check",
+            "raw": "https://ecomdly.com/raw/listwise/marketplace-profitability-check.md"
         },
         {
             "id": "rankcraft/faceted-navigation-seo-audit",
@@ -301,6 +406,21 @@
             "updated": "2026-09-29",
             "url": "https://ecomdly.com/skills/rankcraft/search-console-auditor",
             "raw": "https://ecomdly.com/raw/rankcraft/search-console-auditor.md"
+        },
+        {
+            "id": "rankcraft/site-migration-redirect-mapper",
+            "name": "site-migration-redirect-mapper",
+            "category": "E-shop SEO",
+            "category_slug": "e-shop-seo",
+            "path": "e-shop-seo/site-migration-redirect-mapper.md",
+            "description": "Builds and checks the 301 map for a store moving platform, URL structure or domain: multi-source URL inventory, ID/SKU/EAN matching before fuzzy, discontinued and filter URLs, chains, canonicals, hreflang and post-launch checks.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-10-05",
+            "url": "https://ecomdly.com/skills/rankcraft/site-migration-redirect-mapper",
+            "raw": "https://ecomdly.com/raw/rankcraft/site-migration-redirect-mapper.md"
         },
         {
             "id": "adsledger/feed-custom-label-planner",
@@ -451,6 +571,51 @@
             "updated": "2026-09-29",
             "url": "https://ecomdly.com/skills/helpdeskly/returns-reason-analyzer",
             "raw": "https://ecomdly.com/raw/helpdeskly/returns-reason-analyzer.md"
+        },
+        {
+            "id": "helpdeskly/review-response-drafter",
+            "name": "review-response-drafter",
+            "category": "Customer care",
+            "category_slug": "customer-care",
+            "path": "customer-care/review-response-drafter.md",
+            "description": "Triages new reviews from Google Business Profile, Heureka, Trustpilot and the store's site by severity and drafts one-standard public replies plus internal follow-ups, policy-checked against platform rules and EU review law.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-10-05",
+            "url": "https://ecomdly.com/skills/helpdeskly/review-response-drafter",
+            "raw": "https://ecomdly.com/raw/helpdeskly/review-response-drafter.md"
+        },
+        {
+            "id": "helpdeskly/warranty-claim-handler",
+            "name": "warranty-claim-handler",
+            "category": "Customer care",
+            "category_slug": "customer-care",
+            "path": "customer-care/warranty-claim-handler.md",
+            "description": "Triages consumer claims for faulty goods under the EU legal guarantee (2019/771) with country-correct deadlines and burden of proof, then drafts the acknowledgement, evidence request and decision letter for the owner to approve.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-10-05",
+            "url": "https://ecomdly.com/skills/helpdeskly/warranty-claim-handler",
+            "raw": "https://ecomdly.com/raw/helpdeskly/warranty-claim-handler.md"
+        },
+        {
+            "id": "cartlift/shopify-admin-api-operator",
+            "name": "shopify-admin-api-operator",
+            "category": "Agent tools",
+            "category_slug": "agent-tools",
+            "path": "agent-tools/shopify-admin-api-operator.md",
+            "description": "Lets an agent read and change a Shopify store through the GraphQL Admin API safely: pinned version, least-privilege scopes, cost-aware paging and bulk exports, userErrors checks, owner-approved diffs and a rollback log.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-10-05",
+            "url": "https://ecomdly.com/skills/cartlift/shopify-admin-api-operator",
+            "raw": "https://ecomdly.com/raw/cartlift/shopify-admin-api-operator.md"
         }
     ]
 }
