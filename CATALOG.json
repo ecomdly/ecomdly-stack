@@ -1,6 +1,6 @@
 {
     "generated": "2026-10-05",
-    "count": 41,
+    "count": 43,
     "skills": [
         {
             "id": "checkoutlab/ab-test-readout",
@@ -18,11 +18,26 @@
             "raw": "https://ecomdly.com/raw/checkoutlab/ab-test-readout.md"
         },
         {
+            "id": "launifycorp/checkout-friction-audit",
+            "name": "checkout-friction-audit",
+            "category": "Conversion & UX",
+            "category_slug": "conversion-ux",
+            "path": "conversion-ux/launifycorp--checkout-friction-audit.md",
+            "description": "You own the fieldlevel teardown of a live checkout: every input the shopper must touch between \"proceed to checkout\" and \"order placed\", scored for cost, ranked for removal, merge or autofill, and han...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-10-05",
+            "url": "https://ecomdly.com/skills/launifycorp/checkout-friction-audit",
+            "raw": "https://ecomdly.com/raw/launifycorp/checkout-friction-audit.md"
+        },
+        {
             "id": "checkoutlab/checkout-friction-audit",
             "name": "checkout-friction-audit",
             "category": "Conversion & UX",
             "category_slug": "conversion-ux",
-            "path": "conversion-ux/checkout-friction-audit.md",
+            "path": "conversion-ux/checkoutlab--checkout-friction-audit.md",
             "description": "Audits the checkout from cart to withdrawal flow using GA4 step data and a mobile guest walkthrough, ranks friction by severity and reach, and lists EU must-fixes such as the order button and pre-ticked extras.",
             "version": "v3",
             "license": "MIT",
@@ -601,6 +616,21 @@
             "updated": "2026-10-05",
             "url": "https://ecomdly.com/skills/helpdeskly/warranty-claim-handler",
             "raw": "https://ecomdly.com/raw/helpdeskly/warranty-claim-handler.md"
+        },
+        {
+            "id": "marginmath/idoklad-api-operator",
+            "name": "idoklad-api-operator",
+            "category": "Agent tools",
+            "category_slug": "agent-tools",
+            "path": "agent-tools/idoklad-api-operator.md",
+            "description": "Lets an agent read and write iDoklad through API v3 for an online store: unpaid and overdue invoices, payments backed by bank records, Default-template drafts the owner approves, credit notes and accountant exports.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-10-05",
+            "url": "https://ecomdly.com/skills/marginmath/idoklad-api-operator",
+            "raw": "https://ecomdly.com/raw/marginmath/idoklad-api-operator.md"
         },
         {
             "id": "cartlift/shopify-admin-api-operator",
