@@ -2,11 +2,11 @@
 
 Every published skill on [ecomdly](https://ecomdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @ecomdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http ecomdly https://ecomdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on ecomdly (submit a skill, it goes through review). 43 skills · updated 2026-10-05.
+This repository is generated from the catalog; edits happen on ecomdly (submit a skill, it goes through review). 46 skills · updated 2026-10-05.
 
 ## Categories
 
-- [Agent tools](#agent-tools) (2)
+- [Agent tools](#agent-tools) (5)
 - [Analytics & tracking](#analytics-tracking) (4)
 - [Catalog content](#catalog-content) (4)
 - [Conversion & UX](#conversion-ux) (5)
@@ -22,8 +22,11 @@ This repository is generated from the catalog; edits happen on ecomdly (submit a
 
 | skill | description | version | |
 |---|---|---|---|
+| [shopmetric/adyen-payments-operator](agent-tools/adyen-payments-operator.md) | Lets an agent work an Adyen merchant account safely: find payments, explain refusals, prepare owner-approved refunds, captures and cancels, triage disputes by deadline, and reconcile settlement reports to orders. | v1 | 🛡 |
 | [marginmath/idoklad-api-operator](agent-tools/idoklad-api-operator.md) | Lets an agent read and write iDoklad through API v3 for an online store: unpaid and overdue invoices, payments backed by bank records, Default-template drafts the owner approves, credit notes and accountant exports. | v1 | 🛡 |
+| [cartlift/jira-ticket-collaborator](agent-tools/jira-ticket-collaborator.md) | Lets an agent work e-shop Jira tickets like a good colleague: readiness check, one numbered clarifying comment with defaults and an @mention, ADF comments via REST v3, real transitions only, internal-first replies in JSM. | v1 | 🛡 |
 | [cartlift/shopify-admin-api-operator](agent-tools/shopify-admin-api-operator.md) | Lets an agent read and change a Shopify store through the GraphQL Admin API safely: pinned version, least-privilege scopes, cost-aware paging and bulk exports, userErrors checks, owner-approved diffs and a rollback log. | v1 | 🛡 |
+| [marginmath/stripe-payments-operator](agent-tools/stripe-payments-operator.md) | Lets an agent work a store's Stripe account safely via the Stripe plugin, MCP or REST: find payments, explain declines, triage disputes by due date, reconcile payouts and fees, and prepare owner-approved refunds. | v1 | 🛡 |
 
 ## Analytics & tracking
 
@@ -48,8 +51,8 @@ This repository is generated from the catalog; edits happen on ecomdly (submit a
 | skill | description | version | |
 |---|---|---|---|
 | [checkoutlab/ab-test-readout](conversion-ux/ab-test-readout.md) | Reads out an e-commerce A/B test in the right order: SRM chi-square, pre-registered primary metric, sample size and peeking, effect with confidence interval, guardrails and novelty, then ship, don't ship or inconclusive. | v4 | 🛡 |
-| [launifycorp/checkout-friction-audit](conversion-ux/launifycorp--checkout-friction-audit.md) | You own the fieldlevel teardown of a live checkout: every input the shopper must touch between "proceed to checkout" and "order placed", scored for cost, ranked for removal, merge or autofill, and han... | v1 | 🛡 |
 | [checkoutlab/checkout-friction-audit](conversion-ux/checkoutlab--checkout-friction-audit.md) | Audits the checkout from cart to withdrawal flow using GA4 step data and a mobile guest walkthrough, ranks friction by severity and reach, and lists EU must-fixes such as the order button and pre-ticked extras. | v3 | 🛡 |
+| [launifycorp/checkout-friction-audit](conversion-ux/launifycorp--checkout-friction-audit.md) | You own the fieldlevel teardown of a live checkout: every input the shopper must touch between "proceed to checkout" and "order placed", scored for cost, ranked for removal, merge or autofill, and han... | v1 | 🛡 |
 | [checkoutlab/product-page-cro-review](conversion-ux/product-page-cro-review.md) | Reviews a product page template against the shopper's real purchase questions and EU price, review and safety-info rules, and returns ranked test hypotheses with metrics for store owners and CRO specialists. | v3 |  |
 | [checkoutlab/site-search-audit](conversion-ux/site-search-audit.md) | Audits on-site product search from GA4 view_search_results data or vendor logs plus a hands-on test set (zero results, no-click queries, diacritics, SKU/EAN, filters, mobile) and ranks fixes by lost revenue. | v1 | 🛡 |
 

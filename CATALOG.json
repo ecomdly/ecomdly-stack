@@ -1,6 +1,6 @@
 {
     "generated": "2026-10-05",
-    "count": 43,
+    "count": 46,
     "skills": [
         {
             "id": "checkoutlab/ab-test-readout",
@@ -18,21 +18,6 @@
             "raw": "https://ecomdly.com/raw/checkoutlab/ab-test-readout.md"
         },
         {
-            "id": "launifycorp/checkout-friction-audit",
-            "name": "checkout-friction-audit",
-            "category": "Conversion & UX",
-            "category_slug": "conversion-ux",
-            "path": "conversion-ux/launifycorp--checkout-friction-audit.md",
-            "description": "You own the fieldlevel teardown of a live checkout: every input the shopper must touch between \"proceed to checkout\" and \"order placed\", scored for cost, ranked for removal, merge or autofill, and han...",
-            "version": "v1",
-            "license": "MIT",
-            "recommended": false,
-            "security_checked": true,
-            "updated": "2026-10-05",
-            "url": "https://ecomdly.com/skills/launifycorp/checkout-friction-audit",
-            "raw": "https://ecomdly.com/raw/launifycorp/checkout-friction-audit.md"
-        },
-        {
             "id": "checkoutlab/checkout-friction-audit",
             "name": "checkout-friction-audit",
             "category": "Conversion & UX",
@@ -46,6 +31,21 @@
             "updated": "2026-09-29",
             "url": "https://ecomdly.com/skills/checkoutlab/checkout-friction-audit",
             "raw": "https://ecomdly.com/raw/checkoutlab/checkout-friction-audit.md"
+        },
+        {
+            "id": "launifycorp/checkout-friction-audit",
+            "name": "checkout-friction-audit",
+            "category": "Conversion & UX",
+            "category_slug": "conversion-ux",
+            "path": "conversion-ux/launifycorp--checkout-friction-audit.md",
+            "description": "You own the fieldlevel teardown of a live checkout: every input the shopper must touch between \"proceed to checkout\" and \"order placed\", scored for cost, ranked for removal, merge or autofill, and han...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-10-05",
+            "url": "https://ecomdly.com/skills/launifycorp/checkout-friction-audit",
+            "raw": "https://ecomdly.com/raw/launifycorp/checkout-friction-audit.md"
         },
         {
             "id": "checkoutlab/product-page-cro-review",
@@ -618,6 +618,21 @@
             "raw": "https://ecomdly.com/raw/helpdeskly/warranty-claim-handler.md"
         },
         {
+            "id": "shopmetric/adyen-payments-operator",
+            "name": "adyen-payments-operator",
+            "category": "Agent tools",
+            "category_slug": "agent-tools",
+            "path": "agent-tools/adyen-payments-operator.md",
+            "description": "Lets an agent work an Adyen merchant account safely: find payments, explain refusals, prepare owner-approved refunds, captures and cancels, triage disputes by deadline, and reconcile settlement reports to orders.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-10-05",
+            "url": "https://ecomdly.com/skills/shopmetric/adyen-payments-operator",
+            "raw": "https://ecomdly.com/raw/shopmetric/adyen-payments-operator.md"
+        },
+        {
             "id": "marginmath/idoklad-api-operator",
             "name": "idoklad-api-operator",
             "category": "Agent tools",
@@ -633,6 +648,21 @@
             "raw": "https://ecomdly.com/raw/marginmath/idoklad-api-operator.md"
         },
         {
+            "id": "cartlift/jira-ticket-collaborator",
+            "name": "jira-ticket-collaborator",
+            "category": "Agent tools",
+            "category_slug": "agent-tools",
+            "path": "agent-tools/jira-ticket-collaborator.md",
+            "description": "Lets an agent work e-shop Jira tickets like a good colleague: readiness check, one numbered clarifying comment with defaults and an @mention, ADF comments via REST v3, real transitions only, internal-first replies in JSM.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-10-05",
+            "url": "https://ecomdly.com/skills/cartlift/jira-ticket-collaborator",
+            "raw": "https://ecomdly.com/raw/cartlift/jira-ticket-collaborator.md"
+        },
+        {
             "id": "cartlift/shopify-admin-api-operator",
             "name": "shopify-admin-api-operator",
             "category": "Agent tools",
@@ -646,6 +676,21 @@
             "updated": "2026-10-05",
             "url": "https://ecomdly.com/skills/cartlift/shopify-admin-api-operator",
             "raw": "https://ecomdly.com/raw/cartlift/shopify-admin-api-operator.md"
+        },
+        {
+            "id": "marginmath/stripe-payments-operator",
+            "name": "stripe-payments-operator",
+            "category": "Agent tools",
+            "category_slug": "agent-tools",
+            "path": "agent-tools/stripe-payments-operator.md",
+            "description": "Lets an agent work a store's Stripe account safely via the Stripe plugin, MCP or REST: find payments, explain declines, triage disputes by due date, reconcile payouts and fees, and prepare owner-approved refunds.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-10-05",
+            "url": "https://ecomdly.com/skills/marginmath/stripe-payments-operator",
+            "raw": "https://ecomdly.com/raw/marginmath/stripe-payments-operator.md"
         }
     ]
 }
