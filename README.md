@@ -2,13 +2,13 @@
 
 Every published skill on [ecomdly](https://ecomdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @ecomdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http ecomdly https://ecomdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on ecomdly (submit a skill, it goes through review). 46 skills · updated 2026-10-05.
+This repository is generated from the catalog; edits happen on ecomdly (submit a skill, it goes through review). 47 skills · updated 2026-10-07.
 
 ## Categories
 
 - [Agent tools](#agent-tools) (5)
 - [Analytics & tracking](#analytics-tracking) (4)
-- [Catalog content](#catalog-content) (4)
+- [Catalog content](#catalog-content) (5)
 - [Conversion & UX](#conversion-ux) (5)
 - [Customer care](#customer-care) (4)
 - [E-shop SEO](#e-shop-seo) (4)
@@ -45,6 +45,7 @@ This repository is generated from the catalog; edits happen on ecomdly (submit a
 | [rankcraft/category-page-copy-writer](catalog-content/category-page-copy-writer.md) | Writes the title, meta, short intro, buying guide and evidence-based FAQ for a store category page from the category's dated product export and Search Console queries, with every number traceable and unsupported claims flagged. | v3 |  |
 | [cartlift/product-attribute-extractor](catalog-content/product-attribute-extractor.md) | Extracts colour, size, material, gender and other attributes from titles, variants and descriptions into Merchant Center-ready values, with source, evidence and confidence per value and a review queue for conflicts. | v3 | 🛡 |
 | [tonecheck/product-description-writer](catalog-content/product-description-writer.md) | Writes product descriptions and spec lists from supplier data in the store's brand voice, ordering facts by what decides the purchase for each product type, listing missing specs and flagging unsupported or EU-restricted claims. | v3 |  |
+| [launifycorp/product-glossary-builder](catalog-content/product-glossary-builder.md) | You own one deliverable: a machinereadable translation glossary extracted from the live catalogue, splitting every recurring string into terms that must be translated consistently, brand and model nam... | v1 | 🛡 |
 
 ## Conversion & UX
 

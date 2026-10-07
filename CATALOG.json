@@ -1,6 +1,6 @@
 {
-    "generated": "2026-10-05",
-    "count": 46,
+    "generated": "2026-10-07",
+    "count": 47,
     "skills": [
         {
             "id": "checkoutlab/ab-test-readout",
@@ -256,6 +256,21 @@
             "updated": "2026-09-29",
             "url": "https://ecomdly.com/skills/tonecheck/product-description-writer",
             "raw": "https://ecomdly.com/raw/tonecheck/product-description-writer.md"
+        },
+        {
+            "id": "launifycorp/product-glossary-builder",
+            "name": "product-glossary-builder",
+            "category": "Catalog content",
+            "category_slug": "catalog-content",
+            "path": "catalog-content/product-glossary-builder.md",
+            "description": "You own one deliverable: a machinereadable translation glossary extracted from the live catalogue, splitting every recurring string into terms that must be translated consistently, brand and model nam...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-10-07",
+            "url": "https://ecomdly.com/skills/launifycorp/product-glossary-builder",
+            "raw": "https://ecomdly.com/raw/launifycorp/product-glossary-builder.md"
         },
         {
             "id": "marginmath/clearance-markdown-planner",
