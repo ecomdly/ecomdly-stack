@@ -2,12 +2,12 @@
 
 Every published skill on [ecomdly](https://ecomdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @ecomdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http ecomdly https://ecomdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on ecomdly (submit a skill, it goes through review). 47 skills · updated 2026-10-07.
+This repository is generated from the catalog; edits happen on ecomdly (submit a skill, it goes through review). 48 skills · updated 2026-10-07.
 
 ## Categories
 
 - [Agent tools](#agent-tools) (5)
-- [Analytics & tracking](#analytics-tracking) (4)
+- [Analytics & tracking](#analytics-tracking) (5)
 - [Catalog content](#catalog-content) (5)
 - [Conversion & UX](#conversion-ux) (5)
 - [Customer care](#customer-care) (4)
@@ -35,6 +35,7 @@ This repository is generated from the catalog; edits happen on ecomdly (submit a
 | [shopmetric/ga4-ecommerce-event-auditor](analytics-tracking/ga4-ecommerce-event-auditor.md) | Audits GA4 ecommerce events against Google's schema (currency with value, transaction_id, items, value = price x quantity) and matches purchases to backend orders, returning a prioritised fix list for developers. | v3 | 🛡 |
 | [shopmetric/ga4-funnel-analyst](analytics-tracking/ga4-funnel-analyst.md) | Builds a session-level GA4 checkout funnel, tests which step worsened against the store's own baseline, localises it by device and channel, and proposes one fix with a way to confirm it. | v4 | ★ 🛡 |
 | [shopmetric/revenue-discrepancy-reconciler](analytics-tracking/revenue-discrepancy-reconciler.md) | Reconciles backend, GA4 and Google Ads revenue with an order-level join and a line-by-line bridge (VAT and shipping, time zones, consent, gateway loss, test orders, click vs conversion date) for store owners and analysts. | v3 | 🛡 |
+| [launifycorp/weekly-kpi-slides-deck](analytics-tracking/weekly-kpi-slides-deck.md) | You own the weekly rhythm artifact: a 9slide spine (hard cap 14 including appendix) that tells the store's owner, head of growth and performance buyer what moved last week, why, and what gets decided... | v1 | 🛡 |
 | [shopmetric/weekly-store-kpi-report](analytics-tracking/weekly-store-kpi-report.md) | Writes a one-page Monday KPI report for store owners: backend revenue, orders, AOV, conversion, MER and refunds versus last week and last year, with noise tests and at most two decisions. | v3 | 🛡 |
 
 ## Catalog content
@@ -52,8 +53,8 @@ This repository is generated from the catalog; edits happen on ecomdly (submit a
 | skill | description | version | |
 |---|---|---|---|
 | [checkoutlab/ab-test-readout](conversion-ux/ab-test-readout.md) | Reads out an e-commerce A/B test in the right order: SRM chi-square, pre-registered primary metric, sample size and peeking, effect with confidence interval, guardrails and novelty, then ship, don't ship or inconclusive. | v4 | 🛡 |
-| [launifycorp/checkout-friction-audit](conversion-ux/launifycorp--checkout-friction-audit.md) | You own the fieldlevel teardown of a live checkout: every input the shopper must touch between "proceed to checkout" and "order placed", scored for cost, ranked for removal, merge or autofill, and han... | v1 | 🛡 |
 | [checkoutlab/checkout-friction-audit](conversion-ux/checkoutlab--checkout-friction-audit.md) | Audits the checkout from cart to withdrawal flow using GA4 step data and a mobile guest walkthrough, ranks friction by severity and reach, and lists EU must-fixes such as the order button and pre-ticked extras. | v3 | 🛡 |
+| [launifycorp/checkout-friction-audit](conversion-ux/launifycorp--checkout-friction-audit.md) | You own the fieldlevel teardown of a live checkout: every input the shopper must touch between "proceed to checkout" and "order placed", scored for cost, ranked for removal, merge or autofill, and han... | v1 | 🛡 |
 | [checkoutlab/product-page-cro-review](conversion-ux/product-page-cro-review.md) | Reviews a product page template against the shopper's real purchase questions and EU price, review and safety-info rules, and returns ranked test hypotheses with metrics for store owners and CRO specialists. | v3 |  |
 | [checkoutlab/site-search-audit](conversion-ux/site-search-audit.md) | Audits on-site product search from GA4 view_search_results data or vendor logs plus a hands-on test set (zero results, no-click queries, diacritics, SKU/EAN, filters, mobile) and ranks fixes by lost revenue. | v1 | 🛡 |
 

@@ -1,6 +1,6 @@
 {
     "generated": "2026-10-07",
-    "count": 47,
+    "count": 48,
     "skills": [
         {
             "id": "checkoutlab/ab-test-readout",
@@ -18,21 +18,6 @@
             "raw": "https://ecomdly.com/raw/checkoutlab/ab-test-readout.md"
         },
         {
-            "id": "launifycorp/checkout-friction-audit",
-            "name": "checkout-friction-audit",
-            "category": "Conversion & UX",
-            "category_slug": "conversion-ux",
-            "path": "conversion-ux/launifycorp--checkout-friction-audit.md",
-            "description": "You own the fieldlevel teardown of a live checkout: every input the shopper must touch between \"proceed to checkout\" and \"order placed\", scored for cost, ranked for removal, merge or autofill, and han...",
-            "version": "v1",
-            "license": "MIT",
-            "recommended": false,
-            "security_checked": true,
-            "updated": "2026-10-05",
-            "url": "https://ecomdly.com/skills/launifycorp/checkout-friction-audit",
-            "raw": "https://ecomdly.com/raw/launifycorp/checkout-friction-audit.md"
-        },
-        {
             "id": "checkoutlab/checkout-friction-audit",
             "name": "checkout-friction-audit",
             "category": "Conversion & UX",
@@ -46,6 +31,21 @@
             "updated": "2026-09-29",
             "url": "https://ecomdly.com/skills/checkoutlab/checkout-friction-audit",
             "raw": "https://ecomdly.com/raw/checkoutlab/checkout-friction-audit.md"
+        },
+        {
+            "id": "launifycorp/checkout-friction-audit",
+            "name": "checkout-friction-audit",
+            "category": "Conversion & UX",
+            "category_slug": "conversion-ux",
+            "path": "conversion-ux/launifycorp--checkout-friction-audit.md",
+            "description": "You own the fieldlevel teardown of a live checkout: every input the shopper must touch between \"proceed to checkout\" and \"order placed\", scored for cost, ranked for removal, merge or autofill, and han...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-10-05",
+            "url": "https://ecomdly.com/skills/launifycorp/checkout-friction-audit",
+            "raw": "https://ecomdly.com/raw/launifycorp/checkout-friction-audit.md"
         },
         {
             "id": "checkoutlab/product-page-cro-review",
@@ -556,6 +556,21 @@
             "updated": "2026-09-29",
             "url": "https://ecomdly.com/skills/shopmetric/revenue-discrepancy-reconciler",
             "raw": "https://ecomdly.com/raw/shopmetric/revenue-discrepancy-reconciler.md"
+        },
+        {
+            "id": "launifycorp/weekly-kpi-slides-deck",
+            "name": "weekly-kpi-slides-deck",
+            "category": "Analytics & tracking",
+            "category_slug": "analytics-tracking",
+            "path": "analytics-tracking/weekly-kpi-slides-deck.md",
+            "description": "You own the weekly rhythm artifact: a 9slide spine (hard cap 14 including appendix) that tells the store's owner, head of growth and performance buyer what moved last week, why, and what gets decided...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-10-07",
+            "url": "https://ecomdly.com/skills/launifycorp/weekly-kpi-slides-deck",
+            "raw": "https://ecomdly.com/raw/launifycorp/weekly-kpi-slides-deck.md"
         },
         {
             "id": "shopmetric/weekly-store-kpi-report",
