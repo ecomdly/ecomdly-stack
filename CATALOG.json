@@ -18,21 +18,6 @@
             "raw": "https://ecomdly.com/raw/checkoutlab/ab-test-readout.md"
         },
         {
-            "id": "checkoutlab/checkout-friction-audit",
-            "name": "checkout-friction-audit",
-            "category": "Conversion & UX",
-            "category_slug": "conversion-ux",
-            "path": "conversion-ux/checkoutlab--checkout-friction-audit.md",
-            "description": "Audits the checkout from cart to withdrawal flow using GA4 step data and a mobile guest walkthrough, ranks friction by severity and reach, and lists EU must-fixes such as the order button and pre-ticked extras.",
-            "version": "v3",
-            "license": "MIT",
-            "recommended": false,
-            "security_checked": true,
-            "updated": "2026-09-29",
-            "url": "https://ecomdly.com/skills/checkoutlab/checkout-friction-audit",
-            "raw": "https://ecomdly.com/raw/checkoutlab/checkout-friction-audit.md"
-        },
-        {
             "id": "launifycorp/checkout-friction-audit",
             "name": "checkout-friction-audit",
             "category": "Conversion & UX",
@@ -46,6 +31,21 @@
             "updated": "2026-10-05",
             "url": "https://ecomdly.com/skills/launifycorp/checkout-friction-audit",
             "raw": "https://ecomdly.com/raw/launifycorp/checkout-friction-audit.md"
+        },
+        {
+            "id": "checkoutlab/checkout-friction-audit",
+            "name": "checkout-friction-audit",
+            "category": "Conversion & UX",
+            "category_slug": "conversion-ux",
+            "path": "conversion-ux/checkoutlab--checkout-friction-audit.md",
+            "description": "Audits the checkout from cart to withdrawal flow using GA4 step data and a mobile guest walkthrough, ranks friction by severity and reach, and lists EU must-fixes such as the order button and pre-ticked extras.",
+            "version": "v3",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-29",
+            "url": "https://ecomdly.com/skills/checkoutlab/checkout-friction-audit",
+            "raw": "https://ecomdly.com/raw/checkoutlab/checkout-friction-audit.md"
         },
         {
             "id": "checkoutlab/product-page-cro-review",
